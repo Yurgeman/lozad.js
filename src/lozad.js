@@ -16,6 +16,7 @@ const defaultConfig = {
 
 function markAsLoaded(element) {
   element.setAttribute('data-loaded', true)
+  element.className = 'lozad-loaded'
 }
 
 const isLoaded = element => element.getAttribute('data-loaded') === 'true'

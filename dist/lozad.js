@@ -1,4 +1,4 @@
-/*! lozad.js - v1.0.9 - 2017-10-26
+/*! lozad.js - v1.0.9 - 2017-11-24
 * https://github.com/ApoorvSaxena/lozad.js
 * Copyright (c) 2017 Apoorv Saxena; Licensed MIT */
 
@@ -29,6 +29,7 @@ var defaultConfig = {
 
 function markAsLoaded(element) {
   element.setAttribute('data-loaded', true);
+  element.className = 'lozad-loaded';
 }
 
 var isLoaded = function isLoaded(element) {
